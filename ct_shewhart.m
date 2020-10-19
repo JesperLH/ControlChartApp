@@ -1,8 +1,9 @@
 function [mu, sd, sig_limits, status_rules] = ct_shewhart(...
-    data,n_ref, apply_rules, fig_handle, mu, sd, sig_limits)
+    data,n_ref, apply_rules, fig_handle, ylab, mu, sd, sig_limits)
 
 if nargin < 4 || isempty(fig_handle)
     fig_handle=gca;
+    ylab = 'Difference';
 end
 
 n_obs = length(data);
@@ -22,7 +23,7 @@ else
         
 end
 
-if nargin <5
+if nargin <6
     sig_limits = [2, 3];
     mu = mean(data(1:n_ref));
     sd = sqrt(1/(n_ref-1)*sum((data(1:n_ref)-mu).^2));
@@ -65,7 +66,7 @@ if ymax==0
 end
 ylim(fig_handle, [min(-ymax+mu,min(data(:))), max(ymax+mu,max(data))])
 xlabel(fig_handle,'Observations')
-ylabel(fig_handle,'Difference')
+ylabel(fig_handle,ylab)
 title(fig_handle,'Control Chart (Shewhart)')
 %%
 idx_new = n_ref+1:n_obs;
