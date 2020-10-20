@@ -1,15 +1,15 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="4223679858" file="C:\Users\rb\Documents\GitHub\ControlChartThing\ControlChart.prj" location="C:\Users\rb\Documents\GitHub\ControlChartThing" name="ControlChart" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="1411527676" file="C:\Users\rb\Documents\GitHub\ControlChartThing\ControlChart.prj" location="C:\Users\rb\Documents\GitHub\ControlChartThing" name="ControlChart" target="target.mlapps" target-name="Package App">
     <param.appname>ControlChart</param.appname>
     <param.authnamewatermark>J.L. Hinrich</param.authnamewatermark>
     <param.email />
     <param.company />
     <param.icon />
     <param.icons />
-    <param.summary>A demonstration of Shewhart and CUSUM control charts with generated or user specified data.</param.summary>
+    <param.summary>A demonstration of Shewhart control charts with generated or user specified data.</param.summary>
     <param.description />
-    <param.screenshot>C:\Users\rb\AppData\Local\Temp\tp4b6e9c77_a7dc_4ed6_9cce_acaea6a0681d.png</param.screenshot>
-    <param.version>0.4</param.version>
+    <param.screenshot>C:\Users\rb\AppData\Local\Temp\tp4d2d03d2_2ff5_41ff_b279_e057f68a38d1.png</param.screenshot>
+    <param.version>0.5</param.version>
     <param.products.name />
     <param.products.id />
     <param.products.version />
