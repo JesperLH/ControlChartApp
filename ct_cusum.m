@@ -169,8 +169,8 @@ function plotVmask(xt,t,h,k,fig_handle,mask_color)
 
     d= h/k;
     
-    lup = xt+h+k*(t:-1:1);
-    ldown = xt-h-k*(t:-1:1);
+    lup = xt+h+k*(t-1:-1:0);
+    ldown = xt-h-k*(t-1:-1:0);
     
     plot(fig_handle, [1:t,t:-1:1],[lup,ldown(end:-1:1)],'-','Color',mask_color,'LineWidth',1.5);
     fig_handle.Legend.String{end} = 'V-mask';
