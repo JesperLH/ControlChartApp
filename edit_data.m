@@ -16,10 +16,15 @@ end
 
 
 uit = uitable(fig_handle);
-uit.Data =[ref_data,sensor_data, ref_data-sensor_data];
+if length(ref_data)==length(sensor_data)
+    uit.Data =[ref_data,sensor_data, ref_data-sensor_data];
+    uit.ColumnName = {'Reference Data', 'Sensor Data', 'Difference'};
+else
+    uit.Data =[sensor_data];
+    uit.ColumnName = {'Sensor Data'};
+end
 set(fig_handle,'CloseRequestFcn',@MyReturnData);
 
-uit.ColumnName = {'Reference Data', 'Sensor Data', 'Difference'};
 uit.ColumnEditable = true;
 
 set(fig_handle,'Tag','editFig')
@@ -34,8 +39,12 @@ txt_title.FontSize=14;
 waitfor(fig_handle);
 % end
 % Return edited data
+if length(ref_data)==length(sensor_data)
 ref_data = newData(:,1);
 sensor_data = newData(:,2);
+else
+    sensor_data = newData(:,1);
+end
 
 % end
 
