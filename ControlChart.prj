@@ -1,15 +1,15 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="1411527676" file="C:\Users\rb\Documents\GitHub\ControlChartThing\ControlChart.prj" location="C:\Users\rb\Documents\GitHub\ControlChartThing" name="ControlChart" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="1411527676" file="C:\Users\jehi\Documents\GitHub\ControlChartApp\ControlChart.prj" location="C:\Users\jehi\Documents\GitHub\ControlChartApp" name="ControlChart" target="target.mlapps" target-name="Package App">
     <param.appname>ControlChart</param.appname>
     <param.authnamewatermark>J.L. Hinrich</param.authnamewatermark>
     <param.email />
     <param.company />
     <param.icon />
     <param.icons />
-    <param.summary>A demonstration of Shewhart control charts with generated or user specified data.</param.summary>
+    <param.summary>A demonstration of Shewhart and CUMSUM control charts with generated or user specified data.</param.summary>
     <param.description />
-    <param.screenshot>C:\Users\rb\AppData\Local\Temp\tp4d2d03d2_2ff5_41ff_b279_e057f68a38d1.png</param.screenshot>
-    <param.version>0.5</param.version>
+    <param.screenshot>${PROJECT_ROOT}\Screenshot-simulated-data.png</param.screenshot>
+    <param.version>1.0.0</param.version>
     <param.products.name />
     <param.products.id />
     <param.products.version />
@@ -41,25 +41,19 @@
     <fileset.resources />
     <fileset.package />
     <build-deliverables>
-      <file location="C:\Users\rb\Documents\GitHub" name="ControlChartThing" optional="false">C:\Users\rb\Documents\GitHub\ControlChartThing</file>
+      <file location="C:\Users\jehi\Documents\GitHub" name="ControlChartApp" optional="false">C:\Users\jehi\Documents\GitHub\ControlChartApp</file>
     </build-deliverables>
     <workflow />
     <matlab>
-      <root>C:\Program Files\MATLAB\R2020a</root>
+      <root>C:\Program Files\MATLAB\R2023a</root>
       <toolboxes>
         <toolbox name="matlabcoder" />
-        <toolbox name="gpucoder" />
         <toolbox name="neuralnetwork" />
       </toolboxes>
       <toolbox>
         <matlabcoder>
           <enabled>true</enabled>
         </matlabcoder>
-      </toolbox>
-      <toolbox>
-        <gpucoder>
-          <enabled>true</enabled>
-        </gpucoder>
       </toolbox>
       <toolbox>
         <neuralnetwork>

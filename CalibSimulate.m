@@ -1,5 +1,9 @@
 function [YTrue, SoftSens] = CalibSimulate(Ncal, target, target_sd, reference_sd, sensor_sd, show_plot)
-%% Calibration data
+%% CALIBSIMULATE simulates calibration data from a univariate stochastic process
+%
+% MIT License
+% Copyright (c) <2023> <Jesper Løve Hinrich>
+
 
 if nargin < 1
     Ncal = 30; % Number of samples

@@ -14,6 +14,9 @@ function [mu_target, in_control] = ct_cusum(x_range, data, n_ref, mu_target, cus
 % OUTPUT:
 %   in_control: boolean value indicating whether all observations are in
 %               control (true) or not (false).
+%
+% MIT License
+% Copyright (c) <2023> <Jesper Løve Hinrich>
 
 if nargin < 1 || isempty(data)
     % NIST example
