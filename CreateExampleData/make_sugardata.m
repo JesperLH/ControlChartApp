@@ -1,3 +1,4 @@
+% This example is constructed through the PLS_Toolbox, see https://eigenvector.com/software/pls-toolbox/
 load sugar
 m = parafac(sugar,3,struct('plots','off'));
 A = m.loads{1};
