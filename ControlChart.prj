@@ -1,7 +1,7 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="3314101541" file="C:\Users\jehi\Documents\GitHub\ControlChartApp\ControlChart.prj" location="C:\Users\jehi\Documents\GitHub\ControlChartApp" name="ControlChart" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="2962564293" file="C:\Users\jehi\Documents\GitHub\ControlChartApp\ControlChart.prj" location="C:\Users\jehi\Documents\GitHub\ControlChartApp" name="ControlChart" target="target.mlapps" target-name="Package App">
     <param.appname>ControlChart</param.appname>
-    <param.authnamewatermark>J.L. Hinrich</param.authnamewatermark>
+    <param.authnamewatermark>Jesper L. Hinrich and Rasmus Bro</param.authnamewatermark>
     <param.email />
     <param.company />
     <param.icon />
