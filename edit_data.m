@@ -1,6 +1,9 @@
-%%
 function [ref_data, sensor_data] = edit_data(ref_data, sensor_data, fig_handle)
-
+%%EDIT_DATA handles if the user wants to add or remove outliers from the
+%%data.
+%
+% MIT License
+% Copyright (c) <2023> <Jesper Løve Hinrich>
 if nargin < 1
     ref_data=randn(10,1);
     sensor_data = randn(10,1);
