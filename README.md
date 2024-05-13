@@ -4,6 +4,7 @@ A small interactive program for learning about Control Charts (Shewhart, CUMSUM)
 
 The app runs in MATLAB either locally hosted or through MATLAB online. A small user guide is available below. Note, the program is can be made available as a standalone application using the MATLAB compiler to produce an \*.exe file
 
+![Image of the program](https://github.com/JesperLH/ControlChartApp/blob/main/Screenshot-simulated-data.png)
 
 # User Guide
 
